@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ağır GPK Kuşlar</title>
+</head>
+
+<body>
+    <h1>Ağır Kuşlar</h1>
+    <table>
+        <thead>
+            <tr>
+            <tr>
+                <th>Hayvan</th>
+                <th>Ortalama Kilo[kg(lb)]</th>
+                <th>Maksimum Kilo[kg(lb)]</th>
+                <th>Uçabiliyor mu?</th>
+                <!--başlık kısmı için ayrı bi tr atmamız gerekiyordu bunları deneye deneye tecrübe ede ede öğreneceksin.-->
+            </tr>
+        </thead>
+        <tr>
+            <td>Deve Kuşu</td>
+            <td>104(230)</td>
+            <td>156.8(357)</td>
+            <td>Hayır</td>
+        </tr>
+        <tr>
+            <td>Somali Devekuşu</td>
+            <td>90(200)</td>
+            <td>130(287)</td>
+            <td>Evet</td>
+            <td></td>
+            <!--YUKARIDAKİ BOŞLUĞU HİZALAMAK İÇİN KULLANDIK,BURADAKİ OLAY td ler ile sıralama yapmak tabloda sonrasında
+            tr lere sararak onları ayırıp liste gibi göstermek daha sonrada th in içine sarıp başlık olarak kullancağız table
+        header gibi düşünelim-->
+        <tr>
+            <td>Yabani Hindi</td>
+            <td>13.5(29.8)</td>
+            <td>39(86)</td>
+            <td>Evet</td>
+        </tr>
+        </tr>
+        </tr>
+    </table>
+    <h1>Sefil Kuşlar</h1>
+    <table border="1">
+        <thead>
+            <tr>
+            <tr>
+                <th rowspan='2'>Hayvan</th>
+                <th colspan='2'>Ortalama Kütle</th>
+                <!--az önceki th leri buradaydı tr ların içine taşıdık çünkü kg ve LB e ayrı bi başlık gibi düşün -->
+                <th rowspan='2'>Uçabiliyor mu?</th>
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+            </tr>
+        </thead>
+        <tr>
+            <td>Deve Kuşu</td>
+            <td>104</td>
+            <td>230</td>
+            <td>156.8</td>
+            <td>Hayir</td>
+        </tr>
+        <tr>
+            <td>Somali Devekuşu</td>
+            <td>90</td>
+            <td>130</td>
+            <td>287</td>
+            <td>Evet</td>
+        <tr>
+            <td>Yabani Hindi</td>
+            <td>13.5</td>
+            <td>29.8</td>
+            <td>39</td>
+            <td>Evet</td>
+        </tr>
+        </tr>
+        </tr>
+    </table>
+</body>
+
+</html>

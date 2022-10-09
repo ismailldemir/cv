@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Forms Demo</title>
+</head>
+
+<body>
+
+    <h1>Forms Demo</h1>
+
+    <form action="/durum">
+        <button type='submit'>Lütfen formu gönderme dostum!!!</button>
+        <label for="kullanıcıadı">Kullanıcı Adı Giriniz:</label>
+        <input type="text" placeholder="Kullanıcı Adı" id="kullanıcıadı" name="kullanıcıadı">
+
+        <label for="password">Şifre giriniz:</label>
+        <button>Gönder!!</button>
+        <input type="text" placeholder="Şifre giriniz" id="password" name="password">
+
+        <label for="color">Renk seçiniz:</label>
+        <input type="color" placeholder="renk seçiniz" id="color" name="color">
+
+        <label for="Sayı">Sayı giriniz:</label>
+        <input type="number" placeholder="Sayı giriniz dostum" id="Sayı">
+        <button>Gönder</button>
+        <input type="submit" value="Tıklayın">
+
+    </form>
+    <!--http://127.0.0.1:5500/durum?kullan%C4%B1c%C4%B1ad%C4%B1=&password=&color=%23714b4b-->
+    <!--&nbsp; spacer yani boluk kodu -->
+
+    <hr>
+
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q">
+        <button>Redditte Ara</button>
+    </form>
+    <!--https://www.reddit.com/search/?query= bizim yaptığımız-->
+    <!--https://www.reddit.com/search/?q=dog Reddit.com-->
+    <!--https://www.reddit.com/search/?q=- bizim yaptığımız last-->
+    <hr>
+
+    <form action='https://www.google.com/search'>
+        <input type="text" name="q">
+        <button> Google Search</button>
+    </form>
+    <!--https://www.google.com/webhp ilk yaptığım-->
+    <!--https://www.google.com/webhp?query= 2. yaptığım-->
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button> Youtube Search</button>
+
+
+    </form>
+
+    <h2>Daha fazla input</h2>
+    <form action="birds">
+        <div>
+        <input type="checkbox" name="tos" id="kabul" checked>
+        <label for="kabul">Kabul Ediyorum</label>
+        </div>
+
+        <div>
+            <p>
+            <label for="xs">XS:</label>
+            <input type='radio'name='boyut' id="xs"/>
+             <label for="s">S:</label>       
+            <input type='radio'name='boyut' id="s" value='s' />
+            <label for="m">M:</label>
+            <input type='radio' name='boyut' id="m" value="m"/>
+            <p></p>
+            <label for="hayvan">Favori hayvanınızı seçiniz</label>
+            <select name='hayvan' id='hayvan'>
+                <option value=''>--Birini seçiniz</option>
+            <option value="balık">balık</option>
+            <option value="kedi">kedi</option>
+            <option value="kuş" selected>kuş</option>
+
+            </select>
+            <p>
+        <label fır="peynir">Peynir Miktarı</label>
+        <input type="range" name="peynir miktarı" min="1" max="10" id="peynir" step="7" step="34" />
+            </p>
+            <p><Label for=''>Özel İstek</Label><br />
+            <textarea name="" id="" cols="30" rows="15" placeholder="Buraya bir şeyler yazın"></textarea>
+             </p>
+        </div>
+        <button>Yolla</button>
+
+    </form>
+    
+     <form action='/durum'>
+  <label for='username'>Username</label>
+  <input type='text' placeholder='username' id='username' name='username'><br>
+  
+  <label for='password'>Password</label>
+  <input type='text' placeholder='password' id='password' name='password'><br>
+  
+
+  <button>Register</button>
+    </form>
+    <hr />
+
+    <h2>Validations</h2>
+    <form action='/yedek'>
+     <label for="ilk">İsim Giriniz</label>
+     <input type="text" name="ilk" required minlength="5" maxlength="25" />
+     <p>
+        <label for="kullanıcıadı">kullanıcı adı</label>
+        <input type="text" id="kullanıcıadı" name="kullanıcıadı" minlength="5" maxlength="25" required />
+     </p>
+     <h2>Url Doğrulama</h2>
+     <p><input type='url' />
+     </p>
+      <button>submit</button>
+    </form>
+
+    <h1>Race Registration</h1>
+    <form action='/xander'>
+        <div>
+    <label for="First Name">First Name</label>
+    <input type="text" id="Firstname" name="firstname" required />
+    
+
+    
+    <label for="Lastname">Lastname</label>
+    <input type="text" id="Lastname" name="lastname" required />
+       </div> <br>
+
+    <fieldset>
+    <legend>Select a Race:</legend>
+    
+
+     <div>
+    <input type="radio" id="Fun Run 5k" name="Fun" value="Run 5k"  >
+    <label for="huey">Fun Run 5k</label>
+     </div>
+    
+    <div>
+        <input type="radio" id="xander" name="Fun" value="marathon"  >
+        <label for="dewey">Half Marathon</label>
+    </div>
+
+    <div>
+        <input type="radio" id="terorblade" name="Fun" value='mi' >
+        <label for="louie">Full Marathon</label>
+    </div> 
+    </fieldset>
+    <br>
+
+
+    <div>
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="mail" required />
+
+     <label for="password">Password</label>
+     <input type="text" type="number" required />
+
+    </div>
+    <br>
+
+    <div>
+<label for="grup">Select Age Group</label>
+            <select name='grup' id='grup'>
+            <option value="">Under 18</option>
+            <option value="">18-30</option>
+            <option value="" >30-50</option>
+            <option value="" >50+</option>
+            </select><br>
+            &nbsp;&nbsp;&nbsp;<button>Register!</button>
+    </div>
+
+    
+
+</form>
+</body>
+
+</html>
